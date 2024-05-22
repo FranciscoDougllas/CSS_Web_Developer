@@ -39,6 +39,29 @@
             color: #000088;
             font-weight: bold;
         }
+
+        /* Estilizando o botao */
+        .pulse{
+            background: none;
+            border: none;
+            border: 5px solid;
+            padding: 20px 40px;
+            font-size: 25px;
+            border-radius: 10px;
+            color: #ff7663;
+            transition: 2s;
+        }
+        .pulse:hover{
+            background-color: red;
+            color: #eef4ec;
+            box-shadow: 0 0 0 15px #77779a;
+            animation: pulsar;
+        }
+        @keyframes pulsar{
+            0%{
+                box-shadow: 0 0 0 0 #ef8f6e;
+            }
+        }
     </style>
 </head>
 <body>
@@ -59,6 +82,8 @@
             
         </section>
     </main>
+
+    <button type="button" class="pulse">Botao</button>
     
 
 </body>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-style</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            margin: 10px auto;
+        }
+        div{
+            margin: 10px;
+        }
+        .border-top-style{
+            width: 50vw;
+            height: 20vh;
+            border-top-style: solid;
+            border-width: 5vh;
+            border-top-color: yellowgreen;
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+        }
+        .border-right-style{
+            width: 50vw;
+            height: 20vh;
+            border-right-style: dashed;
+            border-width: 5vh;
+            border-right-color: rgb(50, 58, 205);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+        }
+        .boder-bottom-style{
+            width: 50vw;
+            height: 20vh;
+            border-bottom-style: double;
+            border-width: 5vh;
+            border-bottom-color: rgb(57, 57, 61);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+        }
+        .border-style-left{
+            width: 50vw;
+            height: 20vh;
+            border-left-style: dotted;
+            border-width: 5vh;
+            border-left-color: rgb(57, 57, 61);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+        }
+        .border-style{
+            width: 50vw;
+            height: 20vh;
+            border-style: double;
+            border-width: 5vh;
+            border-color: rgb(57, 57, 61);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+        }
+        #double{
+            width: 50vw;
+            height: 20vh;
+            border-style: double;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #groove{
+            width: 50vw;
+            height: 20vh;
+            border-style: groove;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #outset{
+            width: 50vw;
+            height: 20vh;
+            border-style: outset;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #ridge{
+            width: 50vw;
+            height: 20vh;
+            border-style: ridge;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #dashed{
+            width: 50vw;
+            height: 20vh;
+            border-style: dashed;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #dotted{
+            width: 50vw;
+            height: 20vh;
+            border-style: dotted;
+            border-width: 5vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(205, 194, 194);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #hidden{
+            width: 50vw;
+            height: 20vh;
+            border-style: hidden;
+            border-width: 1vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(151, 120, 120);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+        #solid{
+            width: 50vw;
+            height: 20vh;
+            border-style: solid;
+            border-width: 1vh;
+            border-color: rgb(95, 95, 144);
+            background-color: rgb(151, 120, 120);
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Valores possiveis das Bordas: </b>none | hidden | dotted | dashed | solid |
+        double | groove | ridge | inset | outset |
+        initial | inherit</p>
+    <div class="border-top-style">
+        <p>border-top-style: Estilo da Borda Superior</p>
+    </div>
+
+    <div class="border-right-style">
+        <p>border-right-style: Estilo da Borda Direita</p>
+    </div>
+
+    <div class="boder-bottom-style">
+        <p>boder-bottom-style: Estilo da Borda no Fundo</p>
+    </div>
+
+    <div class="border-style-left">
+        <p>border-style-left: Estilo da Borda Esquerda</p>
+    </div>
+
+    <div class="border-style">
+        <p>border-style: Estilo das 4 Bordas</p>
+    </div>
+
+    <h2>Todos os Estilos de Bordas</h2>
+    <div id="double">
+        <p>double</p>
+    </div>
+
+    <div id="groove">
+        <p>groove </p>
+    </div>
+
+    <div id="outset">
+        <p>outset</p>
+    </div>
+
+    <div id="ridge">
+        <p>ridge </p>
+    </div>
+
+    <div id="dashed">
+        <p>dashed</p>
+    </div>
+
+    <div id="dotted">
+        <p>dotted</p>
+    </div>
+
+    <div id="hidden">
+        <p>hidden</p>
+    </div>
+
+    <div id="solid">
+        <p>solid</p>
+    </div>
+</body>
+</html>

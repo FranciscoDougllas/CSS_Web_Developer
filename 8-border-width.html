@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            margin: 10px auto;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        div{
+            margin: 10px;
+        }
+        #border-top-width{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #567;
+            border-top-width: 10vh;
+            text-align: center;
+        }
+        #border-right-width{
+            width: 350px;
+            height: 200px;
+            border: 1px solid rgb(85, 119, 88);
+            border-right-width: 10vh;
+            text-align: center;
+        }
+        #border-bottom-width{
+            width: 350px;
+            height: 200px;
+            border: 1px solid rgb(8, 209, 25);
+            border-bottom-width: 10vh;
+            text-align: center;
+        }
+        #border-left-width{
+            width: 350px;
+            height: 200px;
+            border: 1px solid rgb(8, 129, 209);
+            border-left-width: 10vh;
+            text-align: center;
+        }
+        #border-width{
+            width: 350px;
+            height: 200px;
+            border: 1px solid rgb(102, 180, 76);
+            border-width: 5vh;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            border-style: double;
+            filter: drop-shadow(0 0 10px);
+            box-shadow: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p><b>Valores possiveis: </b>medium | thin | thick | length | initial |
+            inherit</p>
+
+            <div id="border-top-width">
+                <p>border-top-width: Largura da Borda no topo</p>
+            </div>
+
+            <div id="border-right-width">
+                <p>border-right-width: Largura da Borda na Direita</p>
+            </div>
+
+            <div id="border-bottom-width">
+                <p>border-bottom-width: Largura da Borda no Fundo</p>
+            </div>
+
+            <div id="border-left-width">
+                <p>border-left-width: Largura da Borda na Esquerda</p>
+            </div>
+
+            <div id="border-width">
+                <p>border-width: Largura das 4 Bordas</p>
+            </div>
+    </main>
+  
+</body>
+</html>

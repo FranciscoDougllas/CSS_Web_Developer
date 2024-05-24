@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border-image</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            margin: 120px;
+        }
+        #image-source{
+            width: 450px;
+            height: 450px;
+            border: 1px solid #fbc534;
+            background-color: #444fff;
+            border-image-source: url("img-logos.png");
+            border-image-width: 50px;
+            border-image-slice: 35%;
+            border-image-outset: 50px;
+            border-image-repeat: round;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            font-size: 2rem;
+
+        }
+        .image-width{
+            width: 450px;
+            height: 450px;
+            background-color: #c7c7d0;
+            border-image-source: url("img-logos.png");
+            border-image-width: 30px;
+            border-image-slice: 30%;
+            border-image-outset: 50px;
+            border-image-repeat: round;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            font-size: 2rem;
+        }
+        #image-outset{
+            width: 450px;
+            height: 450px;
+            background-color: #3c8e32;
+            border-image-source: url("img-logos.png");
+            border-image-width: 61px;
+            border-image-slice: 35%;
+            border-image-outset: 10px;
+            border-image-repeat: round;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            font-size: 2rem;
+        }
+        #image-repeat{
+            width: 450px;
+            height: 450px;
+            background-color: #cda626;
+            border-image-source: url("img-logos.png");
+            border-image-width:80px;
+            border-image-slice: 35%;
+            border-image-outset: 15px;
+            border-image-repeat:space;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            font-size: 2rem;
+        }
+        .border-image{
+            width: 450px;
+            height: 450px;
+            border: 1px solid;
+            background-color: #cda626;
+            border-image: url("img-logos.png") 220 / 60 / 100 round;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div id="image-source">
+            <p>border-image-source</p>
+        </div>
+    
+        <div class="image-width">
+            <p>border-image-width</p>
+        </div>
+
+        <div id="image-outset">
+            <p>border-image-outset</p>
+        </div>
+
+        <div id="image-repeat">
+            <p>border-image-repeat</p>
+        </div>
+
+        <div class="border-image">
+            <p>border-image</p>
+        </div>
+    </main>
     
 </body>
 </html>

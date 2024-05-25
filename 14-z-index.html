@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 250px;
+            height: 250px;
+            border: 1px solid;
+        }
+        .primeira{
+            background-color: rgb(63, 124, 177);
+            position: relative;
+            z-index: 4;
+        }
+        .segunda{
+            background-color: brown;
+            position: absolute;
+            left: 10vw;
+            top: 50px;
+            z-index: 3;
+        }
+        .terceira{
+            background-color: yellow;
+            position: absolute;
+            left: 20vw;
+            top: 100px;
+            z-index: 2;
+        }
+        .quarta{
+            background-color: #000;
+            position: absolute;
+            left: 30vw;
+            top: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="primeira"></div>
+    <div class="segunda"></div>
+    <div class="terceira"></div>
+    <div class="quarta"></div>
+</body>
+</html>

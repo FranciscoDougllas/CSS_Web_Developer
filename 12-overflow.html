@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            display: flex;
+        }
+        div{
+            margin: 10px;
+        }
+
+        /* Overflow-x */
+        #overflow-x{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            border: #000 5px solid;
+            overflow-x: scroll; /* hidden, auto */
+        }
+        .item-x{
+            padding: 50px;
+            margin-right: 20px;
+            border: #ff780c 5px outset;
+        }
+
+        /* Overflow-y */
+        #overflow-y{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border: #000 5px solid;
+            overflow-y: scroll; /* hidden, auto */
+        }
+        .item-y{
+            padding: 50px;
+            margin-right: 20px;
+            border: #ff780c 5px outset;
+        }
+
+        /*Overflow*/
+        #overflow{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            border: 5px solid #333;
+            overflow: auto;
+        }
+        .item{
+            height: 500px;
+            padding: 50px;
+            margin: 10px;
+            border: #331a69 2px solid;
+        }
+
+        /* overflow-wrap */
+        #overflow-wrap{
+            width: min-content;
+            border: #333 3px solid;
+            overflow-wrap: break-word;
+            max-width: 150px;
+        }
+
+        /* overflow-block */
+        .overflow-block{
+            width: 400px;
+            height: 500px;
+            border: 5px solid #333;
+            overflow-block: auto;
+        }
+        /* .overflow-inline */
+        .overflow-inline{
+            width: 400px;
+            height: 500px;
+            border: 5px solid #333;
+            overflow-inline: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>overflow-x | overflow-y | overflow | overflow-wrap | overflow-bloc | overflow-inline</p>
+
+        <div id="overflow-x">
+            <div class="item-x">Overflow-x</div>
+            <div class="item-x">Overflow-x</div>
+            <div class="item-x">Overflow-x</div>
+            <div class="item-x">Overflow-x</div>
+            <div class="item-x">Overflow-x</div>
+        </div>
+
+        <div id="overflow-y">
+            <div class="item-y">Overflow-y</div>
+            <div class="item-y">Overflow-y</div>
+            <div class="item-y">Overflow-y</div>
+            <div class="item-y">Overflow-y</div>
+            <div class="item-y">Overflow-y</div>
+        </div>
+
+        <div id="overflow">
+            <div class="item">Overflow</div>
+            <div class="item">Overflow</div>
+            <div class="item">Overflow</div>
+            <div class="item">Overflow</div>
+            <div class="item">Overflow</div>
+        </div>
+
+        <div id="overflow-wrap">
+            <p><b>overflow-wrap</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut omnis ea veniam <b>adahdhasdhahdajhdjahddahsdhj</b> excepturi quod quas placeat accusamus, praesentium itaque a explicabo veritatis tempora doloremque perferendis quidem voluptas, libero autem eum.
+            </p>
+        </div>
+
+        <div class="overflow-block">
+            <p>OBS So funciona o Morzilla Firefox, então numca utilize</p>
+            <div class="block">overflow-block</div>
+            <div class="block">overflow-block</div>
+            <div class="block">overflow-block</div>
+            <div class="block">overflow-block</div>
+            <div class="block">overflow-block</div>
+        </div>
+
+        <div class="overflow-inline">
+            <p>OBS So funciona o Morzilla Firefox, então numca utilize</p>
+            <p><b>overflow-inline</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore ipsa pariatur itaque ea natus, aspernatur dolorem, perspiciatis nisi, blanditiis temporibus voluptatum. Enim, iure? Nostrum iusto qui quidem eos molestias?</p>
+        </div>
+    </main>
+
+</body>
+</html>

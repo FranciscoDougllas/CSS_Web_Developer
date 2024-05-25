@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .container{
+            width: 50vw;
+        }
+        .item{
+            resize: both;
+            overflow: auto;
+            margin: 10px;
+        }
+        p:nth-child(2){
+            resize: inline;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>resize</h2>
+        <div class="container">
+            <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati asperiores optio culpa eaque nemo aperiam nisi corporis explicabo a, incidunt voluptatum quod recusandae eius consequuntur. Enim quibusdam alias amet?</p>
+            <p class="item">Quaerat, sunt. Maxime ipsam necessitatibus illo. Cumque, facilis iusto. Ad pariatur recusandae minus autem molestiae numquam, aut repellendus! Earum reiciendis dolore quis id eveniet reprehenderit atque iusto adipisci eum animi.</p>
+        </div>
+
+        <form action="">
+            <textarea name="" id=""></textarea>
+        </form>
+    </main>
+</body>
+</html>

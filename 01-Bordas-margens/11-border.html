@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            
+        }
+        div{
+            margin: 10px;
+        }
+        #border-collapse table, tr, td, th{
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        #border-collapse table{
+            width: 90vw;
+            border-collapse: collapse;
+        }
+
+        .border-spacing{
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+        #border-top{
+            width: 60vw;
+            height: 20vh;
+            background-color: rgb(185, 172, 172);
+            border-top: #000 20px dashed;
+            padding: 20px;
+        }
+        .border-right{
+            width: 60vw;
+            height: 20vh;
+            background-color: rgb(185, 172, 172);
+            border-right: #000 20px double;
+            padding: 20px;
+        }
+        #border-bottom{
+            width: 60vw;
+            height: 20vh;
+            background-color: rgb(185, 172, 172);
+            border-bottom: #000 20px groove;
+            padding: 20px;
+        }
+        .border-left{
+            width: 60vw;
+            height: 20vh;
+            background-color: rgb(185, 172, 172);
+            border-left: #000 20px groove;
+            padding: 20px;
+        }
+        #border{
+            width: 60vw;
+            height: 20vh;
+            background-color: rgb(185, 172, 172);
+            border: #183c72 20px double;
+            padding: 10px;
+        }
+        #border > p{
+            width: 100%;
+            height: 70%;
+            border: #183c72 20px dashed;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <p>Border-collapse | border-spacing | border-top | border-right | border-bottom | border-left | border</p>
+
+        <div id="border-collapse">
+            <p>border-collapse</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome: </th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+
+        <br>
+        <hr style="border: 2px solid;">
+        <div class="border-spacing">
+            <p>border-spacing</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome: </th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Antoni</td>
+                        <td>@tesmdm.gmail.com</td>
+                        <td>1234567888</td>
+                        <td>Sr. Developer</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+
+        <hr>
+        <br>
+        <div id="border-top">
+            <p>border-top: Borda no Topo</p>
+        </div>
+
+        <div class="border-right">
+            <p>border-right: Borda na Direita</p>
+        </div>
+
+        <div id="border-bottom">
+            <p>border-bottom: Borda no Fundo</p>
+        </div>
+
+        <div class="border-left">
+            <p>border-left: Borda na Esquerda</p>
+        </div>
+
+        <div id="border">
+            <p>border: Borda nos 4 cantos lados</p>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            padding: 10vw;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        div{
+            margin: 15vh;
+        }
+        #outline-style{
+            width: 300px;
+            height: 300px;
+            background-color: mediumaquamarine;
+            outline-style: double;
+            outline-width: 20px;
+            color: blue;
+            padding: 20px;
+            border: 15px dashed yellow;
+
+        }
+        #outline-color{
+            width: 300px;
+            height: 300px;
+            background-color: mediumaquamarine;
+            outline-style: double;
+            outline-width: 20px;
+            outline-color: #2aa90d;
+            color: blue;
+            padding: 20px;
+            border: 15px dotted yellow;
+        }
+        #outline-width{
+            width: 300px;
+            height: 300px;
+            background-color: mediumaquamarine;
+            outline-style: double;
+            outline-width: 30px;
+            outline-color: #5c6159;
+            color: blue;
+            padding: 20px;
+            border: 15px double rgb(11, 42, 105);
+        }
+
+        #outline-offset{
+            width: 300px;
+            height: 300px;
+            background-color: mediumaquamarine;
+            outline-style: double;
+            outline-width: 30px;
+            outline-color: #5c6159;
+            outline-offset: 20px;
+            color: blue;
+            padding: 20px;
+            border: 15px double rgb(11, 42, 105);
+        }
+    .outline{
+            width: 300px;
+            height: 300px;
+            background-color: mediumaquamarine;
+            outline:20px dashed;
+            outline-offset: 20px;
+            color: blue;
+            padding: 20px;
+            border: 15px dotted rgb(11, 42, 105);
+        }
+    </style>
+</head>
+<body>
+    <div id="outline-style">Outline-style</div>
+
+    <div id="outline-color">Outline-color</div>
+
+    <div id="outline-width">Outline-widht</div>
+
+    <div id="outline-offset">Outline-offset</div>
+
+    <div class="outline">Outline</div>
+</body>
+</html>

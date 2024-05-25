@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            width: 100px;
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(184, 204, 221);
+            text-align: center;
+            align-items: center;
+            box-shadow: 0 0 10px;
+        }
+
+
+        .flex-flow{
+            display: flex;
+            width: 90%;
+            box-shadow: 0 0 10px;
+            justify-content: center;
+            background-color: rgb(185, 221, 184);
+            align-items: center;
+            flex-flow: wrap; /* column, wrap-reverse etc */
+        }
+
+    </style>
+</head>
+<body>
+
+    <p><b>Flex-flow: Propriedade resumida de <b>flex-direction e Flex-wrap</b></b> posso utiliza qualquer valor das duas</p>
+    <div class="flex-flow">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">flex</div>
+        <div id="d">dp</div>
+        <div id="e">resumo</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+    </div>
+
+</body>
+</html>

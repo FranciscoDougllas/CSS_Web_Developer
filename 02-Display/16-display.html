@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            max-width: 1250px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        h2{
+            color: blue;
+        }
+        p{
+            border: 1px solid;
+            padding: 5px; 
+            margin: 5px;
+            border-radius: 10px;
+            background-color: #c8f4b9;
+            box-shadow: 0 0 5px;
+        }
+        div{
+            margin: 10px;
+            padding: 10px;
+        }
+        /* Display Block */
+        .display-block{
+            margin-top: 30px;
+            max-width: 50vw;
+        }
+        .block p{
+            display: block;
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        /* Display Inline */
+        .display-inline{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .display-inline p{
+            display: inline;
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        /* display-inline-block */
+        .display-inline-block{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .inline-block p{
+            display: inline-block;
+            border: 1px solid;
+            padding: 5px;
+            
+            
+        }
+
+        /* display-content */
+        .display-content{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .content p{
+            display: contents;
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        /* display-flex */
+        .display-flex{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .flex{
+            display: flex;
+        }
+       
+
+        /* display-inline-flex */
+        .display-inline-flex{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .inline-flex{
+            display: inline-flex;
+        }
+
+        /* display-grid */
+        .display-grid{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 110px);
+        }
+
+        /* display-inline-grid */
+        .display-inline-grid{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .inline-grid{
+            display: inline-grid;
+        }
+
+        /* display-list-item */
+        .display-list-item{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        .list-item{
+            display: list-item;
+        }
+
+         /* display-table */
+         .display-table{
+            margin-top: 30px;
+            max-width: 150vw;
+            text-align: center;
+        }
+        table{
+            display: table;
+        }
+        tr, td, th{
+            border: 1px solid;
+            width: 20px;
+        }
+        td{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+        <div class="display-block">
+            <h2>Display: block</h2>
+            <div class="block">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-inline">
+            <h2>Display: Inline</h2>
+            <div class="inline">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-inline-block">
+            <h2>Display: Inline Block</h2>
+            <div class="inline-block">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-content">
+            <h2>Display: Contents</h2>
+            <div class="content">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-flex">
+            <h2>Display: flex</h2>
+            <div class="flex">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-inline-flex">
+            <h2>Display: inline-flex</h2>
+            <div class="inline-flex">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-grid">
+            <h2>Display: grid</h2>
+            <div class="grid">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-inline-grid">
+            <h2>Display: inline-grid</h2>
+            <div class="inline-grid">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-list-item">
+            <h2>Display: list-item</h2>
+            <div class="list-item">
+                <p>Lorem.</p>
+                <p>Voluptates.</p>
+                <p>Laboriosam?</p>
+                <p>Consequuntur?</p>
+            </div>
+        </div>
+
+        <div class="display-table">
+            <h2>Display table</h2>
+            <table>
+                <ol>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ACS</td>
+                            <td>SD</td>
+                            <td>DDD</td>
+                        </td>
+
+                        <tr>
+                            <td>ACS</td>
+                            <td>SD</td>
+                            <td>DDD</td>
+                        </td>
+
+                        <tr>
+                            <td>ACS</td>
+                            <td>SD</td>
+                            <td>DDD</td>
+                        </td>
+
+                        <tr>
+                            <td>ACS</td>
+                            <td>SD</td>
+                            <td>DDD</td>
+                        </td>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>ACS</td>
+                            <td>SD</td>
+                            <td>DDD</td>
+                        </td>
+                    </tfoot>
+                </ol>
+            </table>
+        </div>
+</body>
+</html>

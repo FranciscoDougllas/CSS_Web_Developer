@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: block;
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div {
+            width: 250px;
+            height: 150px;
+            border-width: 1.5px;
+            border-style: solid #26b048;
+            margin: 5px;
+            text-align: center;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            box-shadow:  0 0 10px rgba(100, 100, 100, .5);
+        }
+        #a:hover, 
+        #b:hover, 
+        #c:hover, 
+        #d:hover,
+        #e:hover{
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Flex-direction row */
+        .row{
+            display: flex;
+            width: 80%;
+            height: 50vh;
+            margin: 10px;
+            flex-direction: row;
+            box-shadow:  0 0 10px rgba(100, 100, 100, .5);
+            border-radius: 20px;
+        }
+        
+        /* Flex Direction row-reverse */
+        .row-reverse{
+            display: flex;
+            width: 80%;
+            height: 50vh;
+            margin: 10px;
+            background-color: rgb(230, 233, 238);
+            flex-direction: row-reverse;
+            box-shadow:  0 0 10px rgba(100, 100, 100, .5);
+            border-radius: 20px;
+        }
+        /* Flex Direction column */
+        .column{
+            display: flex;
+            width: 80%;
+            height: 50vh;
+            margin: 10px;
+            background-color: rgb(218, 241, 213);
+            flex-direction: column;
+            box-shadow:  0 0 10px rgba(100, 100, 100, .5);
+            border-radius: 20px;
+            align-items: center;
+        }
+         /* Flex Direction column-reverse */
+        .column-reverse{
+            display: flex;
+            width: 80%;
+            height: 50vh;
+            margin: 10px;
+            background-color: rgb(218, 225, 216);
+            flex-direction: column-reverse;
+            box-shadow:  0 0 10px rgba(100, 100, 100, .5);
+            border-radius: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">row</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+
+    <div class="row-reverse">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">row-reverse</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+
+    <div class="column">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">column</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+
+    <div class="column-reverse">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">column-reverse</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+</body>
+</html>

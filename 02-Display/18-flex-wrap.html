@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: block;
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            width: 100px;
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            background-color: aliceblue;
+            text-align: center;
+            align-items: center;
+            box-shadow: 0 0 10px;
+        }
+
+        .flex-wrap-wrap{
+            display: flex;
+            width: 90%;
+            flex-direction: row-reverse;
+            box-shadow: 0 0 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+       
+        .flex-wrap-nowrap{
+            display: flex;
+            width: 90%;
+            flex-direction: row-reverse;
+            box-shadow: 0 0 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .flex-wrap-reverse{
+            display: flex;
+            width: 90%;
+            flex-direction: row-reverse;
+            box-shadow: 0 0 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-wrap-wrap">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">flex-wrap</div>
+        <div id="d">wrap</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+    </div>
+
+    <div class="flex-wrap-nowrap">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">flex-wrap</div>
+        <div id="d">nowrap</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+    </div>
+
+    <div class="flex-wrap-reverse">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">flex-wrap</div>
+        <div id="d">wrap-reverse</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="d">D</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        #container{
+            border: 1px solid;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            margin: 10px 20px;
+            
+        }
+        p{
+            width: 150px;
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: center;
+            border-radius: 10px;
+            margin: 5px;
+            box-shadow: 0 0 10px;
+            
+        }
+        .flex-start{
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: wrap;
+        }
+        .flex-start p{
+            background-color: rgb(179, 194, 206);
+        }
+
+
+        .flex-end{
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: wrap;
+        }
+        .flex-end p{
+            background-color: rgb(108, 179, 93);
+
+        }
+
+
+        .center{
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+        .center p{
+            background-color: rgb(193, 179, 182);
+
+        }
+
+
+        .space-between{
+            display: flex;
+            justify-content: space-between;
+            flex-flow: wrap;
+        }
+        .space-between p{
+            background-color: rgb(184, 206, 179);
+
+        }
+
+
+        .space-around{
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+        .space-around p{
+            background-color: rgb(179, 194, 206);
+
+        }
+
+
+        .space-evenly{
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <strong>flex-start</strong>
+        <div class="flex-start">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <strong>flex-end</strong>
+        <div class="flex-end">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <strong>center</strong>
+        <div class="center">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <strong>space-around</strong>
+        <div class="space-between">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div> 
+    </div>
+    
+    <div id="container">
+        <strong>space-between</strong>
+        <div class="space-around">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    
+    <div id="container">
+        <strong>space-evenly</strong>
+        <div class="space-evenly">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div> 
+    </div>
+</body>
+</html>

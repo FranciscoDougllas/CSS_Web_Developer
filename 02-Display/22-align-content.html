@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 auto;
+        }
+        .container {
+            width: 750px;
+            height: 200px; /* Aumentar a altura para visualizar melhor o align-content */
+            border: 1px solid;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        p {
+            padding: 10px;
+            border: 1px solid;
+            margin: 5px;
+            background-color: #7789;
+            flex: 0 0 45%; /* Garantir que os itens sejam grandes o suficiente para envolver */
+        }
+        .normal { align-content: normal; }
+        .stretch { align-content: stretch; }
+        .center { align-content: center; }
+        .start { align-content: start; }
+        .end { align-content: end; }
+        .flex-start { align-content: flex-start; }
+        .flex-end { align-content: flex-end; }
+        .baseline { align-content: baseline; }
+        .first-baseline { align-content: first baseline; }
+        .last-baseline { align-content: last baseline; }
+        .space-between { align-content: space-between; }
+        .space-around { align-content: space-around; }
+        .space-evenly { align-content: space-evenly; }
+        .safe-center { align-content: safe center; }
+        .unsafe-center { align-content: unsafe center; }
+        .initial { align-content: initial; }
+        .inherit { align-content: inherit; }
+        .unset { align-content: unset; }
+    </style>
+</head>
+<body>
+    <div class="container normal">
+        <strong>normal</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container stretch">
+        <strong>stretch</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container center">
+        <strong>center</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container start">
+        <strong>start</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container end">
+        <strong>end</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container flex-start">
+        <strong>flex-start</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container flex-end">
+        <strong>flex-end</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container baseline">
+        <strong>baseline</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container first-baseline">
+        <strong>first baseline</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container last-baseline">
+        <strong>last baseline</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container space-between">
+        <strong>space-between</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container space-around">
+        <strong>space-around</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container space-evenly">
+        <strong>space-evenly</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container safe-center">
+        <strong>safe center</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container unsafe-center">
+        <strong>unsafe center</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container initial">
+        <strong>initial</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container inherit">
+        <strong>inherit</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+
+    <div class="container unset">
+        <strong>unset</strong>
+        <p>Lorem.</p>
+        <p>Non.</p>
+        <p>Magnam?</p>
+        <p>Eos.</p>
+        <p>Excepturi.</p>
+    </div>
+</body>
+</html>

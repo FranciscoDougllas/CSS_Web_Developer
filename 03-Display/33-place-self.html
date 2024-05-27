@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-self</title>
+
+    <style>
+        body{
+            margin: 0 auto;
+            background-color: #eee;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+        }
+        body p{
+            background-color: #00ff0066;
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            place-self: end right;
+            box-shadow: 0 0 10px;
+        }
+
+        body p:nth-child(3){
+            place-self: center;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #container {
+            display: flex;
+            text-align: center;
+            border: 1px solid;
+            width: 100%;
+            height: 50vh;
+        }
+        p {
+            border: 1px solid;
+            background-color: #6667;
+            margin-top: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        .stretch {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .start {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+        }
+        .end {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .flex-start {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .flex-end {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .self-start {
+            display: flex;
+            align-items: self-start;
+            justify-content: center;
+        }
+        .self-end {
+            display: flex;
+            align-items: self-end;
+            justify-content: center;
+        }
+        .baseline {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+        .first-baseline {
+            display: flex;
+            align-items: first baseline;
+            justify-content: center;
+        }
+        .last-baseline {
+            display: flex;
+            align-items: last baseline;
+            justify-content: center;
+        }
+        .safe-center {
+            display: flex;
+            align-items: safe center;
+            justify-content: center;
+        }
+        .unsafe-center {
+            display: flex;
+            align-items: unsafe center;
+            justify-content: center;
+        }
+        .initial {
+            display: flex;
+            align-items: initial;
+            justify-content: center;
+        }
+        .inherit {
+            display: flex;
+            align-items: inherit;
+            justify-content: center;
+        }
+        .unset {
+            display: flex;
+            align-items: unset;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="stretch">
+            <p><strong>stretch</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="center">
+            <p><strong>center</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="start">
+            <p><strong>start</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="end">
+            <p><strong>end</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="flex-start">
+            <p><strong>flex-start</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="flex-end">
+            <p><strong>flex-end</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="self-start">
+            <p><strong>self-start</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="self-end">
+            <p><strong>self-end</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="baseline">
+            <p><strong>baseline</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="first-baseline">
+            <p><strong>first baseline</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="last-baseline">
+            <p><strong>last baseline</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="safe-center">
+            <p><strong>safe center</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="unsafe-center">
+            <p><strong>unsafe center</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="initial">
+            <p><strong>initial</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="inherit">
+            <p><strong>inherit</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="unset">
+            <p><strong>unset</strong></p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>DJANGO</p>
+        </div>
+    </div>
+</body>
+</html>

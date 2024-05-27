@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+
+    <style>
+        body {
+            margin: 0 auto;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-gap: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body > div {
+            display: flex;
+            border: 2px solid #333;
+            border-radius: 10px;
+            transition: all .2s ease-in-out;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 5px;
+        }
+        body div:hover {
+            border-color: #8888;
+            font-weight: bold;
+        }
+        .alias { cursor: alias; background-color: #f44336; }
+        .all-scroll { cursor: all-scroll; background-color: #e91e63; }
+        .auto { cursor: auto; background-color: #9c27b0; }
+        .cell { cursor: cell; background-color: #673ab7; }
+        .col-resize { cursor: col-resize; background-color: #3f51b5; }
+        .context-menu { cursor: context-menu; background-color: #2196f3; }
+        .copy { cursor: copy; background-color: #03a9f4; }
+        .crosshair { cursor: crosshair; background-color: #00bcd4; }
+        .default { cursor: default; background-color: #009688; }
+        .e-resize { cursor: e-resize; background-color: #4caf50; }
+        .ew-resize { cursor: ew-resize; background-color: #8bc34a; }
+        .grab { cursor: grab; background-color: #cddc39; }
+        .grabbing { cursor: grabbing; background-color: #ffeb3b; }
+        .help { cursor: help; background-color: #ffc107; }
+        .move { cursor: move; background-color: #ff9800; }
+        .n-resize { cursor: n-resize; background-color: #ff5722; }
+        .ne-resize { cursor: ne-resize; background-color: #795548; }
+        .nesw-resize { cursor: nesw-resize; background-color: #9e9e9e; }
+        .ns-resize { cursor: ns-resize; background-color: #607d8b; }
+        .nw-resize { cursor: nw-resize; background-color: #f44336; }
+        .nwse-resize { cursor: nwse-resize; background-color: #e91e63; }
+        .no-drop { cursor: no-drop; background-color: #9c27b0; }
+        .none { cursor: none; background-color: #673ab7; }
+        .not-allowed { cursor: not-allowed; background-color: #3f51b5; }
+        .pointer { cursor: pointer; background-color: #2196f3; }
+        .progress { cursor: progress; background-color: #03a9f4; }
+        .row-resize { cursor: row-resize; background-color: #00bcd4; }
+        .s-resize { cursor: s-resize; background-color: #009688; }
+        .se-resize { cursor: se-resize; background-color: #4caf50; }
+        .sw-resize { cursor: sw-resize; background-color: #8bc34a; }
+        .text { cursor: text; background-color: #cddc39; }
+        .url { cursor: url; background-color: #ffeb3b; }
+        .vertical-text { cursor: vertical-text; background-color: #ffc107; }
+        .w-resize { cursor: w-resize; background-color: #ff9800; }
+        .wait { cursor: wait; background-color: #ff5722; }
+        .zoom-in { cursor: zoom-in; background-color: #795548; }
+        .zoom-out { cursor: zoom-out; background-color: #9e9e9e; }
+    </style>
+
+</head>
+<body>
+    <div class="alias">alias</div>
+    <div class="all-scroll">all-scroll</div>
+    <div class="auto">auto</div>
+    <div class="cell">cell</div>
+    <div class="col-resize">col-resize</div>
+    <div class="context-menu">context-menu</div>
+    <div class="copy">copy</div>
+    <div class="crosshair">crosshair</div>
+    <div class="default">default</div>
+    <div class="e-resize">e-resize</div>
+    <div class="ew-resize">ew-resize</div>
+    <div class="grab">grab</div>
+    <div class="grabbing">grabbing</div>
+    <div class="help">help</div>
+    <div class="move">move</div>
+    <div class="n-resize">n-resize</div>
+    <div class="ne-resize">ne-resize</div>
+    <div class="nesw-resize">nesw-resize</div>
+    <div class="ns-resize">ns-resize</div>
+    <div class="nw-resize">nw-resize</div>
+    <div class="nwse-resize">nwse-resize</div>
+    <div class="no-drop">no-drop</div>
+    <div class="none">none</div>
+    <div class="not-allowed">not-allowed</div>
+    <div class="pointer">pointer</div>
+    <div class="progress">progress</div>
+    <div class="row-resize">row-resize</div>
+    <div class="s-resize">s-resize</div>
+    <div class="se-resize">se-resize</div>
+    <div class="sw-resize">sw-resize</div>
+    <div class="text">text</div>
+    <div class="url">url</div>
+    <div class="vertical-text">vertical-text</div>
+    <div class="w-resize">w-resize</div>
+    <div class="wait">wait</div>
+    <div class="zoom-in">zoom-in</div>
+    <div class="zoom-out">zoom-out</div>
+</body>
+</html>

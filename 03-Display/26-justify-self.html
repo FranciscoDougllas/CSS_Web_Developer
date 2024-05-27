@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify self</title>
+
+    <style>
+        body{
+            display: grid;
+            justify-items: center;
+        }
+        div {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px;
+        }
+        div:nth-child(3){
+            justify-self: start;
+        }
+        div:nth-child(2){
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

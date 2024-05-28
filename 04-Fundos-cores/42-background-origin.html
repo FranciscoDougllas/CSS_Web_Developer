@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 30px;
+            padding: 20px;
+            background-image: url('../f3.jpg');
+            border: 10px dashed;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            color: #333;
+        }
+        h1{
+            background-clip: text; 
+            background-image: url('../f3.jpg');
+            border: 20px dashed;
+            font-size: 12rem;
+            font-weight: bold;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            color: rgba(0, 0, 0, .1);
+        }
+        p.border-box{
+            background-origin: border-box;
+        }
+        p.padding-box{
+            background-origin: padding-box;
+        }
+        p.content-box{
+            background-origin: content-box;
+        }
+        p.text{
+            background-origin: text;
+        }
+    </style>
+</head>
+<body>
+    <p class="border-box">border-box.</p>
+    <p class="padding-box">padding-box?</p>
+    <p class="content-box">content-box.</p>
+    <p class="text">text?</p>
+    <h1>TESTE</h1>
+</body>
+</html>

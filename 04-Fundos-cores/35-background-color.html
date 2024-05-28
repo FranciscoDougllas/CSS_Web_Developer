@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-color</title>
+
+    <style>
+
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div{
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+        }
+        body > div:nth-child(1){
+            background-color: red;
+        }
+        body > div:nth-child(2){
+            background-color: rgb(58, 13, 140);
+        }
+        body > div:nth-child(3){
+            background-color: #678;
+        }
+        body > div:nth-child(4){
+            background-color: #333;
+        }
+        body > div:nth-child(5){
+            background-color: #888;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>Cor1</div>
+    <div>Cor2</div>
+    <div>Cor3</div>
+    <div>Cor4</div>
+    <div>Cor5</div>
+    <div>Cor6</div>
+</body>
+</html>

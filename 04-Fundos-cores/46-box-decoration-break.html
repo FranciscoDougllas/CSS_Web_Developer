@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-decoration-break</title>
+
+    <style>
+        span{
+            display: flex;
+            margin: 20px;
+            padding: 20px;
+            margin-left: 30px;
+            background-color: yellowgreen;
+            border-radius: 15px;
+            border-style: solid;
+            font-size: 3rem;
+            line-height: 35px;
+            box-shadow: 10px 10px 10px 0 red;
+            box-decoration-break: clone;
+        }
+    </style>
+</head>
+<body>
+    <span>Lorem <br/>ipsum <br/>dolor sit amet.</span>
+</body>
+</html>

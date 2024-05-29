@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        p {
+            width: 250px;
+            height: 250px;
+            border: 2px solid;
+            margin: 30px;
+            border-radius: 10px;
+        }
+        body p:nth-child(1){
+            background-color: orange;
+            box-shadow: 10px 30px 0 0 #000;
+        }
+        body p:nth-child(2){
+            background-color: rgb(130, 86, 139);
+            box-shadow: 10px 30px 30px 20px #000;
+        }
+        body p:nth-child(3){
+            background-color: rgb(83, 82, 82);
+            box-shadow: 0 0 30px 20px #000 inset;
+        }
+        body p:nth-child(4){
+            background-color: rgb(221, 104, 180);
+            box-shadow: -20px 50px 30px 20px #000;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+</html>

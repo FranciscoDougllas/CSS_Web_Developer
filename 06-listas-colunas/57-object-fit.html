@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+
+    <style>
+         body{
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            width: 80vw;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        figure{
+            width: 500px;
+            text-align: center;
+            border: 1px solid;
+            padding: 4px;
+            box-shadow: 0 0 10px;
+        }
+       
+        .fill{
+            width: 100%;
+            object-fit: fill;
+        }
+        .contain{
+            width: 100%;
+            object-fit: contain;
+        }
+        .cover{
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="content">
+        <figure>
+            <img src="../f3.jpg" alt="" class="fill">
+            <figcaption>fill</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../f3.jpg" alt="" class="contain">
+            <figcaption>contain</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../f3.jpg" alt="" class="cover">
+            <figcaption>cover</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-style</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 150px auto;
+        }
+        #dado{
+            width: 250px;
+            height: 250px;
+            transform: rotate3d(1, 1, 1, 45deg);
+            transform-style: preserve-3d;
+        }
+        #dado:hover{
+            transition: all 3s;
+            transform: rotate3d(0, 20, 0, 90deg);
+        }
+        #dado > div{
+            border: 1px solid;
+            background-image: url('./dado.png');
+            background-size: 500px;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            background-size: 780px;
+            position: absolute;
+        }
+        #um{
+            background-position: -10px -10px;
+            transform: translatez(125px);
+        }
+        #dois{
+            background-position: -260px -10px;
+            transform: rotateX(-90deg) translateZ(125px);
+        }
+        #tres{
+            background-position: -525px -10px;
+            transform: rotateY(90deg) translateZ(-125px);
+        }
+        #quatro{
+            background-position: -5px -300px;
+            transform: rotateX(90deg) translateZ(125px);
+        }
+        #cinco{
+            background-position: -260px -300px;
+            transform: translateZ(-125px);
+
+        }
+        #seis{
+            background-position: -525px -300px;
+            transform: rotateY(-90deg) translateZ(-125px);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="dado">
+        <div id="um"></div>
+        <div id="dois"></div>
+        <div id="tres"></div>
+        <div id="quatro"></div>
+        <div id="cinco"></div>
+        <div id="seis"></div>
+    </div>
+</body>
+</html>

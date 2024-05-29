@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-origin</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+        p {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            background-image: url('../f1.jpg');
+            background-repeat: no-repeat;
+            box-shadow: 10px 0 20px 20px #444;
+            transform: rotate(0deg);
+        }
+        p:hover {
+            transform: rotate(360deg);
+            transform-origin: 200px 200px;
+            transition: all 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-box</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            height: 100vh;
+        }
+        svg{
+            margin: 10%;
+            border: 1px solid;
+        }
+        #caixa{
+            border: 1px solid;
+            box-shadow: 10px 10px #ccc;
+            transform-box: view-box; /*fill-box*/
+            transform-origin: center;
+            animation: girar 4s linear infinite;
+
+        }
+        @keyframes girar{
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 100 100">
+        <rect 
+            id="caixa"
+            width="20"
+            height="20"
+            x="20"
+            y="20"
+            stroke="#000"
+            fill="none"
+        >
+        <circle fill="orange" r="2"
+        transform="traslate(50 50)"/>
+    </svg>
+</body>
+</html>

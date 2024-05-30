@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break-before</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2 {
+            color: rgb(198, 134, 17);
+            break-before: page;
+            break-after: always;
+            break-inside: avoid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Carro1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus necessitatibus minima ipsum, aperiam modi aut natus consequuntur at perspiciatis impedit quia possimus tempore, commodi, saepe provident eius non quo.</p>
+
+        <h2>Carro2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus necessitatibus minima ipsum, aperiam modi aut natus consequuntur at perspiciatis impedit quia possimus tempore, commodi, saepe provident eius non quo.</p>
+
+        <h2>Carro3</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus necessitatibus minima ipsum, aperiam modi aut natus consequuntur at perspiciatis impedit quia possimus tempore, commodi, saepe provident eius non quo.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 4px solid #ccc;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        #object-fill > img{
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+        #object-contain > img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+        #object-cover > img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Object-fit</h2>
+
+    <p><code>object-fill:</code></p>
+    <div id="object-fill">
+        <img src="../img-logos.png" alt="">
+    </div>
+
+    <p><code>object-contain:</code></p>
+    <div id="object-contain">
+        <img src="../f2.jpg" alt="">
+    </div>
+
+    <p><code>object-cover:</code></p>
+    <div id="object-cover">
+        <img src="../img-logos.png" alt="">
+    </div>
+</body>
+</html>

@@ -60,6 +60,25 @@
             filter: drop-shadow(0 0 10px);
             box-shadow: 0 0 10px;
         }
+        #teste{
+            width: 350px;
+            height: 200px;
+            border: 10px dashed;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        #teste p{
+            border: 10px dotted;
+            padding: 20px;
+        }
+        #teste p:nth-child(1){
+            background-color: red;
+            display: flex;
+        }
+        #teste p:nth-child(2){
+            display: flex;
+            background-color: blue;
     </style>
 </head>
 <body>
@@ -85,6 +104,11 @@
 
             <div id="border-width">
                 <p>border-width: Largura das 4 Bordas</p>
+            </div>
+
+            <div id="teste">
+                <p>Teste1</p>
+                <p>Teste2</p>
             </div>
     </main>
   

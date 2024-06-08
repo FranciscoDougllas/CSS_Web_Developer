@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        body{
+            margin: 20 auto;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            background-color: #d0efd1;
+            border-radius: 10px;
+            background-color: rgb(202, 190, 190);
+            box-shadow: 0 0 15px;
+
+
+        }
+        p{
+            padding: 10px;
+            border: 1px solid #1c1e83;
+            margin: 10px;
+            width: 60px;
+            text-align: center;
+            box-shadow: 0 0 5px;
+            border-radius: 10px;
+            background-color: rgb(202, 190, 190);
+        }
+
+        #display-block p{
+            display: block;
+        }
+
+        #display-inline p{
+            display: inline;
+        }
+
+        #display-inline-block p{
+            display: inline-block;
+        }
+       
+        #display-none p{
+            display: none;
+        }
+
+        #none-vs-hidden p {
+            display: flex;
+            visibility: hidden;
+        }
+
+        #display-flex{
+            display: flex;
+        }
+
+        #display-grid{
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div id="display-block">
+        <h3>Display Block</h3>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    <div id="display-inline">
+        <h3>Display Inline</h3>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    <div id="display-inline-block">
+        <h3>Display Inline-block</h3>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    <div id="display-none">
+        <h3>Display-none</h3>
+        <h5>Deixa todo o conteudo oculto</h5>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    <div id="none-vs-hidden">
+        <h3>none-vs-hidden</h3>
+        <h5>Deixa todo o conteudo oculto</h5>
+        <h5>Pessimo pois deixa o Tamanho da tela</h5>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    <div id="display-flex">
+        <h3>Display-Flex</h3>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+
+    
+    <div id="display-grid">
+        <h3>Display-grid</h3>
+        <p>Lorem, ipsum.</p>
+        <p>Quas, quaerat!</p>
+        <p>Ipsa, eos?</p>
+        <p>Rerum, dolorem.</p>
+        <p>Neque, ducimus.</p>
+    </div>
+</body>
+</html>

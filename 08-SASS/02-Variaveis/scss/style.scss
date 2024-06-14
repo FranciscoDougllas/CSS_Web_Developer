@@ -1,0 +1,27 @@
+// Variaveis
+
+$laranja-fundo: #ff760c;
+$fundo-azul: blue;
+$laranja-transparent: #ff760c66;
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $fundo-azul;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $laranja-fundo;
+        height: 100px;
+
+        h1{
+            margin: 0;
+        }
+    }
+    section{
+        background-color: $laranja-transparent;
+        height: calc(100vh - 200px);
+    }
+}

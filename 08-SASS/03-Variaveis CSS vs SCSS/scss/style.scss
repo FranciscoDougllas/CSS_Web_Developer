@@ -1,0 +1,36 @@
+// Variaveis
+
+$laranja-fundo: #ff760c;
+$fundo-azul: blue;
+$laranja-transparent: #ff760c66;
+
+:root{
+    --laranja: #ff760c;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $fundo-azul;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--laranja);
+        height: 100px;
+
+        h1{
+            margin: 0;
+        }
+        h2{
+            background-color: #fff;
+            padding: 20px;
+            color: $laranja-fundo;
+        }
+    }
+    section{
+        background-color: $laranja-transparent;
+        height: calc(100vh - 200px);
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+
+    <style>
+        p{
+            font-size: 2rem;
+        }
+        .first-letter::first-letter{
+            background-color: red;
+            color: #000;
+        }
+        .first-line::first-line{
+            background-color: blue;
+
+        }
+        .backdrop::backdrop{
+            color: gray;
+        }
+        summary::marker{
+            color: yellowgreen;
+        }
+        .selection::selection{
+            background-color: red;
+        }
+        div > p::before{
+            content: "ABDBD";
+            color: red;
+        }
+        div > p::after{
+            content: "ABDBD";
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="first-letter"><b>::first-letter</b> Seleciona a primeira letra da primeira linha</p>
+    <p class="first-line"><b>::first-line</b> Seleciona a Primeira Linha de um texto.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis totam maiores expedita magni ab molestiae modi placeat voluptatibus dolore.</p>
+
+    <p class="backdrop"><b>::backdrop</b> Estiliza o plano de fundo de elementos em modo de tela cheia. Utilizada apenas para videos e midias
+        <video src="">
+
+        </video>
+    </p>
+
+    <p class="marker"><b>::marker</b> Permite estilizar os topicos ou numeros de uma lista (li) ou entao a flecha de um elemento summary
+    <summary>Testo de Texte</summary>
+    </p>
+
+    <p class="selection"><b>::selection</b> Permite estiliza a seleção de textos no navegador. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi esse nesciunt, at similique modi nostrum itaque provident labore, in laudantium ea, facilis cupiditate est corporis dolores obcaecati nihil fugiat!</p>
+
+    <p class="file-selector-button"><b>::file-selector-button</b>
+        Permite estilizar a seleção de textos no navegador
+    </p>
+    <input type="button">
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae corporis mollitia consequatur, laudantium voluptatem at dolores ipsum consectetur nobis.</p>
+    </div>
+</body>
+</html>

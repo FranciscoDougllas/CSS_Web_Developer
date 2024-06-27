@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus</title>
+
+    <style>
+        label{
+            display: block;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+        input, select{
+            font-size: 1.2rem;
+        }
+        input:focus{
+            outline: 2px dashed;
+        }
+        select:focus{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo classes :focus</h1>
+
+    <form action="">
+        <p>Faça seu pedido! Escolha o sabor</p>
+
+        <label for="">Nome completo
+            <input type="text" name="nome">
+        </label>
+
+        <label for="">
+            Sabor do Soverte
+            <select name="sabor" id="">
+                <option value="chocolate">chocolate</option>
+                <option value="queijo">queijo</option>
+                <option value="morango">morango</option>
+                <option value="mangas">mangas</option>
+            </select>
+        </label>
+        
+    </form>
+</body>
+</html>

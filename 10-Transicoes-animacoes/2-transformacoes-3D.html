@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações 3D</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 200px;
+            perspective-origin: top;
+        }
+        .box {
+            background: linear-gradient(90deg, red, blue);
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 50px;
+        }
+        .box:hover {
+            border-radius: 50px;
+            transform: rotateY(360deg) rotateX(360deg);
+            rotate: infinit;
+            transition: 12s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        // Remova esta parte, pois não é mais necessária
+        // const box = document.querySelector(".box");
+        // const minValue = 0;
+        // const maxValue = 100;
+        // const rangeArray = Array.from({ length: maxValue - minValue + 1 }, (_, index) => index);
+        // box.style.transform.rotateY(rangeArray);
+    </script>
+</body>
+</html>

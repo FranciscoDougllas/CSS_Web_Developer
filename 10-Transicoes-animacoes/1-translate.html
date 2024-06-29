@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+
+    <style>
+        body{
+            margin: 20 auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            background: linear-gradient(90deg, #77f10d,  rgb(9, 9, 9));
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .translate:hover{
+            transform: translate(50px, 0);
+        }
+
+
+        /* Rotate */
+        .rotate:hover{
+            transform: rotate(360deg);
+            transition: 2s ;
+        }
+
+        /* Rotatex */
+        .rotatex:hover{
+            transform: rotateX(35deg);
+        }
+        .rotatey:hover{
+            transform: rotateY(40deg);
+        }
+
+        .skewx:hover{
+            transform: skewX(20deg);
+            border-radius: none;
+        }
+
+        .matrix:hover{
+            /*matrix: matrix(
+            scaleX(),
+            scaleY(),
+            skewY(),
+            skewX(),
+            translateX(),
+            translateY())*/
+            transform: matrix(1, 2, 2, 1, 0, 0);]
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate"></div>
+
+    <div class="rotate"></div>
+
+    <div class="rotatex" style="background: linear-gradient(red, blue);"></div>
+    <div class="rotatey" style="background: linear-gradient(red, blue);"></div>
+
+    <div class="skewx"></div>
+
+    <div class="matrix"></div>
+</body>
+</html>

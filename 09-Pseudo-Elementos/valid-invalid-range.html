@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:valid{
+            border: 1px solid green;
+            width: 200px;
+            height: 50px;
+        }
+        input:invalid{
+            border: 3px solid red;
+        }
+        input:required{
+            background-color: red;
+        }
+        input:optional{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo Classes</h2>
+    <ul>
+        <li>:invalid</li>
+        <li>:valid</li>
+        <li>:in-range</li>
+        <li>:out-of-range</li>
+    </ul>
+    
+    <input type="number" placeholder="Digite algo">
+</body>
+</html>

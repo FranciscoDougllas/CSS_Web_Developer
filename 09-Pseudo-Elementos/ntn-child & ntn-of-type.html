@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child & nth-of-type</title>
+
+    <style>
+        ul li:nth-child(1){
+            color: red;
+        }
+        ul li:nth-child(2){
+            background-color: yellowgreen;
+            width: 100px;
+        }
+
+        ul :nth-child(3){
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul li:nth-of-type(6){
+            background-color: red;
+        }
+        ul li:nth-last-child(7){
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Textes e Exemplos</h2>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+</body>
+</html>
